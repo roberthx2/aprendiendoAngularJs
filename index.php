@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Hola Controller</title>
 	<script src="angular/angular.js">  </script>
-	<script src="controller.js"></script>
+	<script src="controller/controller.js"></script>
 </head>
 <body ng-controller="MiController">
 	<label>Comentario</label>
