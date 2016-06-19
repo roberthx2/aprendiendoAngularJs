@@ -1,8 +1,8 @@
  var app = angular.module("MiModulo",[]);
- app.controller("MiController", function($scope){
- 	$scope.nombre = "Roberth";
- 	$scope.nuevoComentario = {};
- 	$scope.comentarios = [
+ app.controller("MiController", ["$scope",function(m){
+ 	m.nombre = "Roberth";
+ 	m.nuevoComentario = {};
+ 	m.comentarios = [
 	 	{
 	 		comentario: "Buen tutorial",
 	 		username: "roberthx2" 
@@ -12,8 +12,8 @@
 	 		username: "vegeta"
 	 	}
  	];
- 	$scope.agregarComentario = function(){
- 		$scope.comentarios.push($scope.nuevoComentario);
- 		$scope.nuevoComentario = {};
+ 	m.agregarComentario = function(){
+ 		m.comentarios.push(m.nuevoComentario);
+ 		m.nuevoComentario = {};
  	}
- });
+ }]);
