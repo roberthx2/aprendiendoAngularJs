@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="filtros">
+<head>
+	<meta charset="UTF-8">
+	<title>Filtros</title>
+	<script src="angular/angular.js">  </script>
+	<script src="controller/
+	filtrosController.js"></script>
+	<script src="js/angular-local-storage.js"></script>
+</head>
+<body ng-controller="filtroController">
+	{{miHtml | removeHtml}}<br>
+	{{miHtml | json}
+	<p> {{costo | currency:'Bs Deviles. '}} </p>
+</body>
+</html>
